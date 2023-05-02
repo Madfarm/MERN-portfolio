@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineHome, AiOutlineMenu, AiOutlineProject, AiOutlineMail } from 'react-icons/ai';
 import { BsPerson } from 'react-icons/bs';
 import { GrProjects } from 'react-icons/gr';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export default function Header() {
@@ -11,6 +11,8 @@ export default function Header() {
     const handleNav = () => {
         setNav(!nav)
     }
+
+   
 
     return (
         <header className=''>
