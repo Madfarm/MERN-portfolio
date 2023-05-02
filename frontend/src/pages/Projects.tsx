@@ -30,15 +30,15 @@ function Projects(props:{URL: string}) {
     
 
     let mappedProjects = projectList.map((project) => (
-        <div className="max-w-sm rounded overflow=hidden shadow-lg bg-gray-400 pt-12 my-4 mx-8  flex flex-col items-center justify-center">
-            <h1>{project.name}</h1>
-            <img src={project.image} />
-            <div className="justify-self-end justify-between pt-12">
-                <a className="mx-12 border-2" href={project.git}>
+        <div className="max-w-sm rounded-xl overflow-hidden shadow-lg shadow-gray-600 bg-gray-800 my-4 mx-8 flex flex-col items-center justify-center h-64">
+            <h1 className="border-b-2 w-full text-center">{project.name}</h1>
+            <img src={project.image} className="pb-12 h-32" />
+            <div className="justify-self-end justify-between border-t-2 pt-4" >
+                <a className="mx-12" href={project.git}>
                     <button>Github</button>
                 </a>
                 <a className="mx-12" href={project.live}>
-                    <button>live site</button>
+                    <button>Live Site</button>
                 </a>
             </div>
         </div>
