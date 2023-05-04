@@ -45,9 +45,9 @@ function Projects(props:{URL: string}) {
     ));
 
     return (
-        <>
+        <div className="flex flex-col justify-center items-center">
         {mappedProjects}
-        </>
+        </div>
     )
 }
 
